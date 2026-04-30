@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #558390;
+
+    /* Soft pastel gradient (pleasant & unique) */
+    background: linear-gradient(135deg, #60a5d0, #74bce3, #5480a9);
+}
+
+/* Glass container */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+h2 {
+    text-align: center;
+    color: #34495e;
+}
+
+/* Inputs */
+input, select {
+    padding: 10px;
+    margin: 6px 0;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.5);
+    outline: none;
+}
+
+/* Main button */
+button {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #74b9ff, #cb53e1);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #6c5ce7, #74b9ff);
+}
+
+/* Task cards */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(210, 90, 90, 0.35);
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    border-left: 4px solid #6c5ce7;
+}
+
+/* Completed */
+.completed {
+    text-decoration: line-through;
+    color: #457d91;
+}
+
+/* Action buttons */
+.actions button {
+    width: auto;
+    margin-left: 5px;
+    padding: 6px 10px;
+    background: #a29bfe;
+}
+
+.actions button:hover {
+    background: #6c5ce7;
+    color: white;
+}
+
+/* Due status */
+.due-status {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.overdue {
+    color: #d63031;
+}
+
+.today {
+    color: #e17055;
+}
+
+.tomorrow {
+    color: #0984e3;
+}
